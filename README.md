@@ -1,28 +1,28 @@
 
 # Specifications
 ```
-Gigabyte B460M Aorus Pro (Bios: F4)
+Gigabyte B460M Aorus Pro (Bios: F5c)
  - Audio: Realtek® ALC1200 codec
  - Ethernet: Intel® Ethernet Connection I219V12
 Intel Core i5 10400 SHR3C
 Ram 2 x 8GB corsair vengeance lpx 2666CL16
 SSD WD BLACK SN750 250GB NVME PCIe Gen3 x4 (WDS250G3X0C)
-VGA Gigabyte Radeon™ RX 570 GAMING 4G MI
-Wifi + Bluetooth BCM943602CS (WTXUP)
+Wifi + Bluetooth BCM94360CS2 (WTXUP)
 Monitor Samsung U28E590D 28-inch 4k
 ```
 ![9](/images/9.png)
 ![13](/images/13.png)
-# OpenCore (Version: 0.6.3 - stable) + macOS Catalina (Version 10.15.5+) or macOS Big Sur (Version 11.0+)
+# OpenCore (Version: 0.6.8 - stable) + macOS Catalina (Version 10.15.5+) or macOS Big Sur (Version 11.0+)
 - https://dortania.github.io/OpenCore-Install-Guide/
-- https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3
+- https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.6
 # Kexts include
-- AppleALC (1.5.4)
-- IntelMausi (1.0.4)
-- Lilu (1.4.9)
+- AppleALC (1.5.9)
+- IntelMausi (1.0.5)
+- Lilu (1.5.2)
+- NVMeFix (1.0.6)
 - USBPorts
-- VirtualSMC (1.1.8)
-- WhateverGreen (1.4.4)
+- VirtualSMC (1.2.2)
+- WhateverGreen (1.4.9)
 - XHCI-unsupported
 # Work??
 - Intel Quick Sync
@@ -45,12 +45,18 @@ Monitor Samsung U28E590D 28-inch 4k
 ![5](/images/5.png)
 ![iStat](/images/Screen%20Shot%202020-10-08%20at%2010.05.23.png)
 
+##iGPU Only
+![22](/images/igpu.png)
+
 # Note For You
 
-1. Choose the config file for your case:
-- iGPU Only then rename config_iGPU_only.plist to config.plist
-- iGPU + RX4xx_RX5xx (Polaris) then next to step 2
-- iGPU + RX5xxx (Navi) then rename config_iGPU+RX5xxx_Navi.plist to config.plist
+~~1. Choose the config file for your case:~~
 
-2. The file config.plist. Please change MLB, SystemSerialNumber, SystemUUID
+~~- iGPU Only then rename config_iGPU_only.plist to config.plist~~
+
+~~- iGPU + RX4xx_RX5xx (Polaris) then next to step 2~~
+
+~~- iGPU + RX5xxx (Navi) then rename config_iGPU+RX5xxx_Navi.plist to config.plist~~
+
+~~2.~~ The file config.plist. Please change MLB, SystemSerialNumber, SystemUUID
 ![12](/images/12.png)
